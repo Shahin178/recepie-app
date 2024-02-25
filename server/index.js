@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv").config();
 
 const app = express();
-const PORT = 8080;
+const PORT = 8080 || process.env.PORT;
 const host = "localhost";
 
 // Import your database connection code
